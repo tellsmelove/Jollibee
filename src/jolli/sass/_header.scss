@@ -1,0 +1,119 @@
+#header{
+ padding-top: 5px;
+ padding-bottom: 5px;
+}
+#logo {
+    img{
+        max-width: 70px;
+    }
+}
+#sub-menu {
+    i {
+        font-size: 30pt;
+        margin: 2px 8px;
+        @include max-lg {
+            margin: 2px 4px;
+        }
+    }
+    .fa-facebook-official {
+        color: rgb(15, 15, 167);
+    }
+    .fa-google {
+        background: -webkit-linear-gradient(rgb(212, 4, 4), rgb(243, 247, 6));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .fa-youtube-play {
+        color: red;
+    }
+}
+#navbar {  
+    @include md{
+        flex:  0 0 50%;
+        
+    }
+    @include max-md{
+        position: fixed;
+        overflow-x: auto;
+        right: 100%;
+        transition: .4s ease all;
+        z-index: 6;
+        min-width: 250px;
+        top: 0;
+        height: 100vh;
+    }
+    &.active {
+        transform: translateX(100%);
+        background-color: #a51212;
+        width: 100px;
+        text-align: right;
+    }
+    ul {
+        position: relative;
+        @include max-md {
+            flex-direction: column!important;
+            text-align: right;
+            z-index: 888;
+        }
+        li {
+            
+            a {
+                display: block;
+                padding: 12px 12px;
+                text-align: center;
+                color: #fff;
+                font-size: 15pt;
+                font-weight: bold;
+                &:hover {
+                    background-color: #a51212;
+                }
+                @include max-sm {
+                    padding: 8px 8px;
+                    font-size: 12pt;
+                    text-align: left;
+                }
+            }
+            .fa-times {
+                position: absolute;
+                top: 0;
+                right: 0;
+                z-index: 999;
+                color: #fff;
+                font-size: 18pt;
+                padding: 5px;
+            }
+        }
+        li:not(:last-child) {
+            border-right: 1px solid rgba(rgb(212, 112, 112), .6)!important;
+            @include max-sm {
+                    border-bottom: 1px solid rgba(rgb(212, 112, 112), .6)!important;
+            }
+        }
+        li:last-child {
+            display: none;
+            @include max-md {
+                display: block;
+            }
+        }
+        li:first-child {
+            border-left: 1px solid rgba(rgb(212, 112, 112), .6)!important;
+        }
+    }
+}
+#nav {
+    background-color: #da0000;
+    overflow: hidden;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    z-index: 999;
+   
+}
+#toggle {
+    padding: 5px 0px;
+    a{
+        color: #fff;
+        font-size: 16pt;
+        
+    }
+}

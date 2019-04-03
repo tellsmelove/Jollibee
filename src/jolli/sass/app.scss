@@ -1,0 +1,158 @@
+@import './mixin';
+@import './global';
+@import './header';
+@import './footer';
+@import './contact';
+@import './about';
+.text-primary {
+    color: #1ee2e7;
+}
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide {
+    &:hover {
+        // background-color: rgba(#eee, .6);
+        opacity: 0.8;
+    }
+}
+.bg-slide {
+    background-position: center;
+    background-size: cover;
+    img {
+        width: 100%;
+        // height: 650px;
+        min-height: 100px;
+        @include max-md { 
+            height: auto;
+        }
+    }
+}
+.slide-main {
+    img {
+        width: 100%;
+        height: 200px;
+    }
+}
+.swiper-wrapper {
+    width: 95%;
+}
+
+.swiper-button-lui,
+.swiper-button-toi {
+  position: absolute;
+  top: 50%;
+  width: 27px;
+  height: 44px;
+  margin-top: -85px;
+  z-index: 10;
+  cursor: pointer;
+  background-size: 27px 44px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.swiper-button-lui,
+.swiper-container-rtl .swiper-button-toi {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/0/05/Red_Arrow_Left.png");
+  left: 10px;
+  right: auto;
+}
+.swiper-button-toi,
+.swiper-container-rtl .swiper-button-lui {
+  background-image: url("https://www.pinclipart.com/picdir/big/1-16415_download-red-arrow-right-png-clipart-arrow-clip.png");
+  right: 10px;
+  left: auto;
+}
+
+.card {
+    &:hover {
+        border: 1px solid red;
+    }
+}
+.card-title {
+    color: #e1000c;
+    font-weight: bold;
+    font-size: 16pt;
+    &:hover {
+        color: rgba(#e1000c, .6);
+    }
+}
+.btn-subfood {
+    background-color: #da0000;
+    color: #fff;
+    &:hover {
+        background-color: #9c1818;
+        color: #fff;
+    }
+}
+
+
+.img-banner{
+    position: relative;
+    img {
+        width: 100%;
+        height: 200px;
+    }
+    &_text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(#fff, .6);
+        color: #f20002;
+        width: 100%;
+        font-size: 18pt;
+        font-weight: bold;
+        &:hover {
+            color: #f20002;
+        }
+        span {
+            display: inline-block;
+            height: 100%;
+            width: 100%;
+            text-align: center;
+        }
+    }
+}
+.new-food {
+    &-title {
+        color: #dc0000;
+        font-weight: bold;
+    }
+}
+.banner-qc {
+    img{
+        width: 100%;
+        height: 320px;
+        @include max-md {
+            height: auto;
+        }
+    }
+}
+.article-title {
+    h2{
+        color: #dc0000;
+        font-weight: bold;
+    }
+}
+.gallery {
+    height: 400px;
+    &-left {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+    }
+    &-right {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        margin-bottom: 12px;
+        @include max-sm {
+            height: 200px;
+        }
+    }
+}
