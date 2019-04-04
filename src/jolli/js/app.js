@@ -64,18 +64,36 @@ $(document).ready(() => {
         slidesPerGroup: 1,
         loop: true,
         loopFillGroupWithBlank: true,
+        
         breakpoints: {
-            1024: {
+            1025: {
                 slidesPerView: 3,
                 spaceBetween: 40,
+                autoplay: {
+                    delay: 5000,
+                },
+                navigation: {
+                    nextEl: '.swiper-button-toi',
+                    prevEl: '.swiper-button-lui',
+                },
             },
             769: {
                 slidesPerView: 2,
                 spaceBetween: 30,
+                autoplay: {
+                    delay: 5000,
+                },
+                navigation: {
+                    nextEl: '.swiper-button-toi',
+                    prevEl: '.swiper-button-lui',
+                },
             },
             440: {
                 slidesPerView: 1,
                 spaceBetween: 20,
+                autoplay: {
+                    delay: 5000,
+                },
                 navigation: {
                     nextEl: '.swiper-button-toi',
                     prevEl: '.swiper-button-lui',
@@ -86,5 +104,22 @@ $(document).ready(() => {
 
     $("#flip").click(function () {
         $("#panel").slideToggle("slow");
+    });
+    $('.number-spinner button').on('click', function (e) {
+        e.preventDefault();
+        var btn = $(this),
+            oldValue = btn.closest('.number-spinner').find('input').val().trim(),
+            newVal = 0;
+
+        if (btn.attr('data-dir') == 'up') {
+            newVal = parseInt(oldValue) + 1;
+        } else {
+            if (oldValue > 1) {
+                newVal = parseInt(oldValue) - 1;
+            } else {
+                newVal = 1;
+            }
+        }
+        btn.closest('.number-spinner').find('input').val(newVal);
     });
 })

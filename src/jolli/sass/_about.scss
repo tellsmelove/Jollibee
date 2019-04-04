@@ -1,0 +1,74 @@
+.img-main {
+    position: relative;
+    background-image: url('https://jollibee.com.vn/images/about/about-bg2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+}
+.about-box {
+    position: absolute;
+    width: 50%;
+    height: 300px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(#fff, .5);
+    left: 50%;
+    top: 50%;
+    opacity: 0.1;
+    transform: translate(-50%, 50%);
+    animation: loadPage 1.7s .5s ease forwards;
+
+    @keyframes loadPage {
+        to{
+            opacity: 1;
+            transform: translate(-50%, -50%);
+        }
+    }
+    @include max-xl {
+            width: 90%;
+            
+        }
+    @include max-sm {
+            width: 90%;
+            height: 87%;
+        }
+    &_title {
+        position: absolute;
+        display: inline-block;
+        background-color: #1363de;
+        color: #fff;
+        font-weight: bold;
+        top: 0;
+        left: 50%;
+        font-size: 16pt;
+        transform: translate(-50%, -50%);
+        padding: 10px 10px;
+        border-radius: 5px;
+        // width: 50%;
+        @include max-sm {
+            width: 80%;
+            text-align: center;
+        }
+    }
+}
+.about-content {
+    background-color: #ffeb81;
+    h1 {
+        font-weight: bold;
+        color: #da0000;
+        margin: 24px 0px;
+    }
+    .story-content {
+        font-size: 1.25rem;
+    }
+}
+.gallery-about {
+    img {
+        height: 250px;
+        width: 100%;
+
+    }
+
+}
