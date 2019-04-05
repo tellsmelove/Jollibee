@@ -5,6 +5,7 @@
 @import './contact';
 @import './about';
 @import './detailproduct';
+@import './product';
 .text-primary {
     color: #1ee2e7;
 }
@@ -13,10 +14,16 @@
     height: 100%;
 }
 .card {
+    position: relative;
     &:hover {
-        
         background-color: rgba(#eee, .3);
         transition: .4s ease all;
+    }
+    .product-sale {
+        position: absolute;
+        top: 3%;
+        left: 5%;
+        z-index: 99;
     }
 }
 .bg-slide {
@@ -156,5 +163,11 @@
         @include max-sm {
             height: 200px;
         }
+    }
+}
+.seach-btn {
+    flex-direction: row;
+    button{
+        width: auto;
     }
 }
