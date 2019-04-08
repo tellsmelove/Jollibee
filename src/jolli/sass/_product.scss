@@ -1,3 +1,13 @@
 .product-image {
+    height: 200px;
     min-height: 150px;
+    @include max-sm {
+        height: auto;
+    }
+}
+.card-body-product {
+    @include max-sm {
+        padding: 0;
+        margin: 5px 0px;
+    }
 }
