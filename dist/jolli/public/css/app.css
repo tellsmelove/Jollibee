@@ -556,16 +556,28 @@ input[type=number] {
 
 .card {
   position: relative;
+  outline: 1px solid transparent;
+  outline-offset: 8px;
+  transition: 0.4s ease all;
 }
 .card:hover {
-  background-color: rgba(238, 238, 238, 0.3);
-  transition: 0.4s ease all;
+  outline-color: #2225d1;
+  outline-offset: 2px;
 }
 .card .product-sale {
   position: absolute;
   top: 3%;
   left: 5%;
   z-index: 99;
+}
+.card-newfood {
+  outline: none !important;
+  outline-offset: 8px;
+}
+.card-newfood:hover {
+  background-color: rgba(238, 238, 238, 0.4);
+  outline-color: none;
+  outline-offset: none;
 }
 
 .bg-slide {
@@ -614,14 +626,10 @@ input[type=number] {
   left: auto;
 }
 
-.card:hover {
-  border: 1px solid red;
-}
-
 .card-title {
   color: #e1000c;
   font-weight: bold;
-  font-size: 16pt;
+  font-size: 13pt;
 }
 .card-title:hover {
   color: rgba(225, 0, 12, 0.6);

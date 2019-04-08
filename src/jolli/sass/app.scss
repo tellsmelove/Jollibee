@@ -15,15 +15,27 @@
 }
 .card {
     position: relative;
+    outline: 1px solid transparent;
+    outline-offset: 8px;
+    transition: .4s ease all;
     &:hover {
-        background-color: rgba(#eee, .3);
-        transition: .4s ease all;
+        outline-color: #2225d1;
+        outline-offset: 2px;
     }
     .product-sale {
         position: absolute;
         top: 3%;
         left: 5%;
         z-index: 99;
+    }
+    &-newfood {
+        outline: none!important;
+        outline-offset:08px;
+        &:hover {
+            background-color: rgba(#eee, .4);
+             outline-color: none;
+            outline-offset: none;
+        }
     }
 }
 .bg-slide {
@@ -74,15 +86,10 @@
   left: auto;
 }
 
-.card {
-    &:hover {
-        border: 1px solid red;
-    }
-}
 .card-title {
     color: #e1000c;
     font-weight: bold;
-    font-size: 16pt;
+    font-size: 13pt;
     &:hover {
         color: rgba(#e1000c, .6);
     }
