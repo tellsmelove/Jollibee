@@ -25,7 +25,7 @@
             <div class="col-md-6 col-9">
                 <form method="POST" class="form-inline justify-content-end row">
                     <div class="col-9 p-0">
-                        <input class="form-control w-100 mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <input class="form-control w-100 mr-sm-2" name="" type="search" placeholder="Search" aria-label="Search">
                     </div>
                     <div class="col-3 p-0 seach-btn">
                         <button class="btn rounded-0 border-0 btn-success my-2 my-sm-0" type="submit">
@@ -71,15 +71,19 @@
                 </li>
                 <li><a href="#" class="items-nav">Giới Thiệu</a></li>
                 <li><a href="#" class="items-nav">Thực Đơn</a></li>
-                <li><a href="#" class="items-nav">Giỏ Hàng</a></li>
+                <li><a href="#" class="items-nav d-none d-md-block">Giỏ Hàng</a></li>
                 <li><a href="#" class="items-nav">Liên Hệ</a></li>
                 <li><i class="fa fa-times d-md-none d-block" aria-hidden="true"></i></li>
             </ul>
         </div>
-        <div id="toggle" class="col-12 d-md-none d-block text-left">
-            <a href="#" data-toggle>
+        <div id="toggle" class="col-12 d-md-none d-block d-flex flex-wrap">
+            <a href="#" class="text-left d-inline-block flex-grow-1" data-toggle>
                 <i class="fa fa-lg fa-bars"></i>
                 <span>Menu</span>
+            </a>
+            <a href="#" class="cart-bars text-right d-inline-block">
+                <i class="fa fa-shopping-cart" aria-hidden="true" style="font-size: 20pt;"></i>
+                <span>Giỏ hàng</span>
             </a>
         </div>
     </div>
@@ -205,7 +209,7 @@
             <div class="col-12 slide-main">
                 <div class="swiper-container swiper-newfood text-center">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide card card-newfood border-0">
+                        <div class="swiper-slide card card-newfood border-0" style="height: auto">
                             <a href="#" target="_blank"><img
                                     src="https://trithucvn.net/wp-content/uploads/2018/09/cua-rang-me-1.jpg" alt=""></a>
                             <div class="card-body">
@@ -216,7 +220,7 @@
                                 <a href="#" class="btn-sm btn-subfood">Đặt món</a>
                             </div>
                         </div>
-                        <div class="swiper-slide card card-newfood border-0">
+                        <div class="swiper-slide card card-newfood border-0" style="height: auto">
                             <a href="#" target="_blank"><img
                                     src="https://media.cooky.vn/recipe/g1/4350/s800x500/recipe4350-635815339415391960.jpg"
                                     alt=""></a>
@@ -228,7 +232,7 @@
                                 <a href="#" class="btn-sm btn-subfood">Đặt món</a>
                             </div>
                         </div>
-                        <div class="swiper-slide card card-newfood border-0">
+                        <div class="swiper-slide card card-newfood border-0" style="height: auto">
                             <a href="#" target="_blank"><img
                                     src="http://wikitieudung.com/ngon/wp-content/uploads/2017/05/tom-chien-1-848x477.jpg"
                                     alt=""></a>
@@ -240,7 +244,7 @@
                                 <a href="#" class="btn-sm btn-subfood">Đặt món</a>
                             </div>
                         </div>
-                        <div class="swiper-slide card card-newfood border-0">
+                        <div class="swiper-slide card card-newfood border-0" style="height: auto">
                             <a href="#" target="_blank"><img
                                     src="https://media.cooky.vn/recipe/g3/28037/s800x500/recipe-cover-r28037.jpg" alt=""></a>
                             <div class="card-body">
@@ -251,17 +255,9 @@
                                 <a href="#" class="btn-sm btn-subfood">Đặt món</a>
                             </div>
                         </div>
-                    </div>
-                    <div class="swiper-button-toi swiper-button-white d-lg-none"></div>
-                    <div class="swiper-button-lui swiper-button-white d-lg-none"></div>
-                </div>
-            </div>
-            <div class="col-12 slide-main">
-                <div class="swiper-container swiper-newfood text-center">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide card card-newfood border-0">
-                            <a href="#" target="_blank"><img
-                                    src="https://trithucvn.net/wp-content/uploads/2018/09/cua-rang-me-1.jpg" alt=""></a>
+                        <div class="swiper-slide card card-newfood border-0" style="height: auto">
+                            <a href="#" target="_blank"><img src="https://trithucvn.net/wp-content/uploads/2018/09/cua-rang-me-1.jpg"
+                                    alt=""></a>
                             <div class="card-body">
                                 <a href="#" class="card-title">
                                     CUA RANG ME
@@ -270,10 +266,9 @@
                                 <a href="#" class="btn-sm btn-subfood">Đặt món</a>
                             </div>
                         </div>
-                        <div class="swiper-slide card card-newfood border-0">
+                        <div class="swiper-slide card card-newfood border-0" style="height: auto">
                             <a href="#" target="_blank"><img
-                                    src="https://media.cooky.vn/recipe/g1/4350/s800x500/recipe4350-635815339415391960.jpg"
-                                    alt=""></a>
+                                    src="https://media.cooky.vn/recipe/g1/4350/s800x500/recipe4350-635815339415391960.jpg" alt=""></a>
                             <div class="card-body">
                                 <a href="#" class="card-title">
                                     CHẢ GIÒ CHIÊN
@@ -282,10 +277,9 @@
                                 <a href="#" class="btn-sm btn-subfood">Đặt món</a>
                             </div>
                         </div>
-                        <div class="swiper-slide card card-newfood border-0">
+                        <div class="swiper-slide card card-newfood border-0" style="height: auto">
                             <a href="#" target="_blank"><img
-                                    src="http://wikitieudung.com/ngon/wp-content/uploads/2017/05/tom-chien-1-848x477.jpg"
-                                    alt=""></a>
+                                    src="http://wikitieudung.com/ngon/wp-content/uploads/2017/05/tom-chien-1-848x477.jpg" alt=""></a>
                             <div class="card-body">
                                 <a href="#" class="card-title">
                                     TÔM CHIÊN BỘT
@@ -294,9 +288,31 @@
                                 <a href="#" class="btn-sm btn-subfood">Đặt món</a>
                             </div>
                         </div>
-                        <div class="swiper-slide card card-newfood border-0">
-                            <a href="#" target="_blank"><img
-                                    src="https://media.cooky.vn/recipe/g3/28037/s800x500/recipe-cover-r28037.jpg" alt=""></a>
+                        <div class="swiper-slide card card-newfood border-0" style="height: auto">
+                            <a href="#" target="_blank"><img src="https://media.cooky.vn/recipe/g3/28037/s800x500/recipe-cover-r28037.jpg"
+                                    alt=""></a>
+                            <div class="card-body">
+                                <a href="#" class="card-title">
+                                    BÁNH BỘT LỌC
+                                </a>
+                                <p class="card-text">250.000 VNĐ</p>
+                                <a href="#" class="btn-sm btn-subfood">Đặt món</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide card card-newfood border-0" style="height: auto">
+                            <a href="#" target="_blank"><img src="https://media.cooky.vn/recipe/g3/28037/s800x500/recipe-cover-r28037.jpg"
+                                    alt=""></a>
+                            <div class="card-body">
+                                <a href="#" class="card-title">
+                                    BÁNH BỘT LỌC
+                                </a>
+                                <p class="card-text">250.000 VNĐ</p>
+                                <a href="#" class="btn-sm btn-subfood">Đặt món</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide card card-newfood border-0" style="height: auto">
+                            <a href="#" target="_blank"><img src="https://media.cooky.vn/recipe/g3/28037/s800x500/recipe-cover-r28037.jpg"
+                                    alt=""></a>
                             <div class="card-body">
                                 <a href="#" class="card-title">
                                     BÁNH BỘT LỌC
@@ -306,8 +322,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-button-toi swiper-button-white d-lg-none"></div>
-                    <div class="swiper-button-lui swiper-button-white d-lg-none"></div>
+                    <div class="swiper-button-toi swiper-button-white d-md-none"></div>
+                    <div class="swiper-button-lui swiper-button-white d-md-none"></div>
                 </div>
             </div>
         </div>
@@ -386,55 +402,55 @@
                 <div class="row mb-md-3">
                     <div class="col-md-3 mb-3 mb-md-0 pb-md-3">
                         <img src="https://cdn.vox-cdn.com/thumbor/yhgUvuPAYijlZr0RcHb7duj9PTU=/0x0:8420x5433/1200x800/filters:focal(3537x2044:4883x3390)/cdn.vox-cdn.com/uploads/chorus_image/image/58223823/2017_12_07_ColinMiller_ChelseaMarket_0003_9654_v4_copy.0.jpg"
-                            alt="">
+                            alt="" class="gallery-images">
                     </div>
                     <div class="col-md-3 mb-3 mb-md-0 pt-md-3">
                         <img src="https://cdn.vox-cdn.com/thumbor/yhgUvuPAYijlZr0RcHb7duj9PTU=/0x0:8420x5433/1200x800/filters:focal(3537x2044:4883x3390)/cdn.vox-cdn.com/uploads/chorus_image/image/58223823/2017_12_07_ColinMiller_ChelseaMarket_0003_9654_v4_copy.0.jpg"
-                            alt="">
+                            alt="" class="gallery-images">
                     </div>
                     <div class="col-md-3 mb-3 mb-md-0 pb-md-3">
                         <img src="https://cdn.vox-cdn.com/thumbor/yhgUvuPAYijlZr0RcHb7duj9PTU=/0x0:8420x5433/1200x800/filters:focal(3537x2044:4883x3390)/cdn.vox-cdn.com/uploads/chorus_image/image/58223823/2017_12_07_ColinMiller_ChelseaMarket_0003_9654_v4_copy.0.jpg"
-                            alt="">
+                            alt="" class="gallery-images">
                     </div>
                     <div class="col-md-3 mb-3 mb-md-0 pt-md-3">
                         <img src="https://cdn.vox-cdn.com/thumbor/yhgUvuPAYijlZr0RcHb7duj9PTU=/0x0:8420x5433/1200x800/filters:focal(3537x2044:4883x3390)/cdn.vox-cdn.com/uploads/chorus_image/image/58223823/2017_12_07_ColinMiller_ChelseaMarket_0003_9654_v4_copy.0.jpg"
-                            alt="">
+                            alt="" class="gallery-images">
                     </div>
                 </div>
                 <div class="row mb-md-3">
                     <div class="col-md-3 mb-3 mb-md-0 pt-md-3">
                         <img src="https://cdn.vox-cdn.com/thumbor/yhgUvuPAYijlZr0RcHb7duj9PTU=/0x0:8420x5433/1200x800/filters:focal(3537x2044:4883x3390)/cdn.vox-cdn.com/uploads/chorus_image/image/58223823/2017_12_07_ColinMiller_ChelseaMarket_0003_9654_v4_copy.0.jpg"
-                            alt="">
+                            alt="" class="gallery-images">
                     </div>
                     <div class="col-md-3 mb-3 mb-md-0 pb-md-3">
                         <img src="https://cdn.vox-cdn.com/thumbor/yhgUvuPAYijlZr0RcHb7duj9PTU=/0x0:8420x5433/1200x800/filters:focal(3537x2044:4883x3390)/cdn.vox-cdn.com/uploads/chorus_image/image/58223823/2017_12_07_ColinMiller_ChelseaMarket_0003_9654_v4_copy.0.jpg"
-                            alt="">
+                            alt="" class="gallery-images">
                     </div>
                     <div class="col-md-3 mb-3 mb-md-0 pt-md-3">
                         <img src="https://cdn.vox-cdn.com/thumbor/yhgUvuPAYijlZr0RcHb7duj9PTU=/0x0:8420x5433/1200x800/filters:focal(3537x2044:4883x3390)/cdn.vox-cdn.com/uploads/chorus_image/image/58223823/2017_12_07_ColinMiller_ChelseaMarket_0003_9654_v4_copy.0.jpg"
-                            alt="">
+                            alt="" class="gallery-images">
                     </div>
                     <div class="col-md-3 mb-3 mb-md-0 pb-md-3">
                         <img src="https://cdn.vox-cdn.com/thumbor/yhgUvuPAYijlZr0RcHb7duj9PTU=/0x0:8420x5433/1200x800/filters:focal(3537x2044:4883x3390)/cdn.vox-cdn.com/uploads/chorus_image/image/58223823/2017_12_07_ColinMiller_ChelseaMarket_0003_9654_v4_copy.0.jpg"
-                            alt="">
+                            alt="" class="gallery-images">
                     </div>
                 </div>
                 <div class="row mb-3">
                     <div class="col-md-3 mb-3 mb-md-0 pb-md-3">
                         <img src="https://cdn.vox-cdn.com/thumbor/yhgUvuPAYijlZr0RcHb7duj9PTU=/0x0:8420x5433/1200x800/filters:focal(3537x2044:4883x3390)/cdn.vox-cdn.com/uploads/chorus_image/image/58223823/2017_12_07_ColinMiller_ChelseaMarket_0003_9654_v4_copy.0.jpg"
-                            alt="">
+                            alt="" class="gallery-images">
                     </div>
                     <div class="col-md-3 mb-3 mb-md-0 pt-md-3">
                         <img src="https://cdn.vox-cdn.com/thumbor/yhgUvuPAYijlZr0RcHb7duj9PTU=/0x0:8420x5433/1200x800/filters:focal(3537x2044:4883x3390)/cdn.vox-cdn.com/uploads/chorus_image/image/58223823/2017_12_07_ColinMiller_ChelseaMarket_0003_9654_v4_copy.0.jpg"
-                            alt="">
+                            alt="" class="gallery-images">
                     </div>
                     <div class="col-md-3 mb-3 mb-md-0 pb-md-3">
                         <img src="https://cdn.vox-cdn.com/thumbor/yhgUvuPAYijlZr0RcHb7duj9PTU=/0x0:8420x5433/1200x800/filters:focal(3537x2044:4883x3390)/cdn.vox-cdn.com/uploads/chorus_image/image/58223823/2017_12_07_ColinMiller_ChelseaMarket_0003_9654_v4_copy.0.jpg"
-                            alt="">
+                            alt="" class="gallery-images">
                     </div>
                     <div class="col-md-3 mb-3 mb-md-0 pt-md-3">
                         <img src="https://cdn.vox-cdn.com/thumbor/yhgUvuPAYijlZr0RcHb7duj9PTU=/0x0:8420x5433/1200x800/filters:focal(3537x2044:4883x3390)/cdn.vox-cdn.com/uploads/chorus_image/image/58223823/2017_12_07_ColinMiller_ChelseaMarket_0003_9654_v4_copy.0.jpg"
-                            alt="">
+                            alt="" class="gallery-images">
                     </div>
                 </div>
             </div>

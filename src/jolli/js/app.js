@@ -27,7 +27,7 @@ $(document).ready(() => {
     });
     var person_slider = new Swiper('.swiper-person', {
         slidesPerView: 4,
-        spaceBetween: 50,
+        spaceBetween: 30,
         slidesPerGroup: 1,
         loop: true,
         loopFillGroupWithBlank: true,
@@ -60,43 +60,40 @@ $(document).ready(() => {
     var person_slider = new Swiper('.swiper-newfood', {
         simulateTouch: false,
         slidesPerView: 4,
-        spaceBetween: 30,
-        slidesPerGroup: 1,
+        spaceBetween: 20,
+        slidesPerGroup: 2,
+        slidesPerColumn: 2,
+        // height: auto,
         loop: true,
-        loopFillGroupWithBlank: true,
-        
+        // loopFillGroupWithBlank: true,
         breakpoints: {
             1025: {
-                slidesPerView: 3,
+                slidesPerView: 4,
                 spaceBetween: 40,
-                autoplay: {
-                    delay: 5000,
-                },
-                navigation: {
-                    nextEl: '.swiper-button-toi',
-                    prevEl: '.swiper-button-lui',
-                },
+                slidesPerColumn: 1,
+                simulateTouch: false,
+                loop: true,
             },
             769: {
-                slidesPerView: 2,
+                slidesPerView: 4,
                 spaceBetween: 30,
-                autoplay: {
-                    delay: 5000,
-                },
-                navigation: {
-                    nextEl: '.swiper-button-toi',
-                    prevEl: '.swiper-button-lui',
-                },
+                slidesPerColumn: 1,
+                simulateTouch: false,
+                loop: true,
             },
             440: {
                 slidesPerView: 1,
+                slidesPerColumn: 1,
                 spaceBetween: 20,
+                simulateTouch: true,
+                autoHeight: true,
+                loop: true,
                 autoplay: {
                     delay: 5000,
                 },
                 navigation: {
-                    nextEl: '.swiper-button-toi',
-                    prevEl: '.swiper-button-lui',
+                    nextEl: '.swiper-button-lui',
+                    prevEl: '.swiper-button-toi',
                 },
             },
         }

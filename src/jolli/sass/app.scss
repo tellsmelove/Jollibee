@@ -58,6 +58,15 @@
     img {
         width: 100%;
         height: 200px;
+        @include max-xl { 
+            height: 180px;
+        }
+        @include max-lg { 
+            height: 150px;
+        }
+        @include max-sm { 
+            height: auto!important;
+        }
     }
 }
 .swiper-wrapper {
@@ -180,5 +189,15 @@
     flex-direction: row;
     button{
         width: auto;
+    }
+}
+.gallery-images {
+    height: 170px;
+    width: 100%;
+    @include max-lg {
+        height: 120px;
+    }
+    @include max-sm {
+        height: auto!important;
     }
 }
