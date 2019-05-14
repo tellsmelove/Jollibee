@@ -201,3 +201,18 @@
         height: auto!important;
     }
 }
+.gallery-background{
+    margin-bottom: 30px;
+    
+    &:nth-child(2n) {
+        img{
+            transform: translateY(20px);
+            @include max-sm {
+                transform: translateY(0px);
+            }
+        }
+    }
+}
+.modal-dialog {
+    max-width: 800px!important;
+}

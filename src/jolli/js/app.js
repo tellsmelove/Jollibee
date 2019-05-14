@@ -1,7 +1,7 @@
 var overlay = document.getElementById('overlay');
 $(document).ready(() => {
     var navbar = $('#navbar');
-    var toggle = $('[data-toggle]');
+    var toggle = $('.navbar-items');
     var close = $('.fa-times');
 
     toggle.on('click', function (e) {
@@ -13,6 +13,8 @@ $(document).ready(() => {
         navbar.toggleClass('active');
     });
     
+    
+
     var swiper = new Swiper('.swiper-main', {
         spaceBetween: 30,
         effect: 'fade',
@@ -119,4 +121,7 @@ $(document).ready(() => {
         }
         btn.closest('.number-spinner').find('input').val(newVal);
     });
+})
+$('#myModal').on('shown.bs.modal', function () {
+    $('#myInput').trigger('focus')
 })
