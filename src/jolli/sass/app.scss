@@ -6,6 +6,11 @@
 @import './about';
 @import './detailproduct';
 @import './product';
+h2 {
+    @include max-md {
+        font-size: 1.5rem;
+    }
+}
 .text-primary {
     color: #1ee2e7;
 }
@@ -57,9 +62,9 @@
 .slide-main {
     img {
         width: 100%;
-        height: 200px;
+        height: 180px;
         @include max-xl { 
-            height: 180px;
+            height: 170px;
         }
         @include max-lg { 
             height: 150px;

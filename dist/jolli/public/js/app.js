@@ -120,7 +120,7 @@ $(document).ready(function () {
   });
   var person_slider = new Swiper('.swiper-person', {
     slidesPerView: 4,
-    spaceBetween: 30,
+    spaceBetween: 50,
     slidesPerGroup: 1,
     loop: true,
     loopFillGroupWithBlank: true,
