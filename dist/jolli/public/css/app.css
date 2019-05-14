@@ -596,7 +596,7 @@ input[type=number] {
 }
 
 .swiper-wrapper {
-  width: 95%;
+  width: 100%;
 }
 
 .swiper-button-lui,
@@ -731,6 +731,11 @@ input[type=number] {
   max-width: 800px !important;
 }
 
+.card-newfood {
+  flex: 0 0 25%;
+  padding: 8px 8px;
+}
+
 @media screen and (min-width: 768px) {
   #navbar {
     flex: 0 0 50%;
@@ -749,6 +754,9 @@ input[type=number] {
   }
   .gallery-images {
     height: 120px;
+  }
+  .card-newfood {
+    flex: 0 0 50% !important;
   }
 }
 
@@ -779,6 +787,9 @@ input[type=number] {
   }
   .banner-qc img {
     height: auto;
+  }
+  .card-newfood {
+    flex: 0 0 100% !important;
   }
 }
 

@@ -153,33 +153,11 @@ $(document).ready(function () {
   var person_slider = new Swiper('.swiper-newfood', {
     simulateTouch: false,
     slidesPerView: 4,
-    spaceBetween: 20,
-    slidesPerGroup: 2,
-    slidesPerColumn: 2,
-    // height: auto,
-    loop: true,
-    // loopFillGroupWithBlank: true,
     breakpoints: {
-      1025: {
-        slidesPerView: 4,
-        spaceBetween: 40,
-        slidesPerColumn: 1,
-        simulateTouch: false,
-        loop: true
-      },
-      769: {
-        slidesPerView: 4,
-        spaceBetween: 30,
-        slidesPerColumn: 1,
-        simulateTouch: false,
-        loop: true
-      },
       440: {
         slidesPerView: 1,
-        slidesPerColumn: 1,
         spaceBetween: 20,
         simulateTouch: true,
-        autoHeight: true,
         loop: true,
         autoplay: {
           delay: 5000
